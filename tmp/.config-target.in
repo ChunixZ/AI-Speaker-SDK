@@ -1,0 +1,399 @@
+choice
+	prompt "Target System"
+	default TARGET_sunxi
+	reset if !DEVEL
+	
+config TARGET_astar_evb
+	bool "astar-evb"
+	select LINUX_3_4
+	select DISPLAY_SUPPORT
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_astar_parrot
+	bool "astar-parrot"
+	select LINUX_3_4
+	select DISPLAY_SUPPORT
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_astar_spk
+	bool "astar-spk"
+	select LINUX_3_4
+	select DISPLAY_SUPPORT
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_azalea_evb
+	bool "azalea-evb"
+	select LINUX_3_10
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_azalea_perf1
+	bool "azalea-perf1"
+	select LINUX_3_10
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_azalea_perf2
+	bool "azalea-perf2"
+	select LINUX_3_10
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_azalea_perf3
+	bool "azalea-perf3"
+	select LINUX_3_10
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_octopus_dev
+	bool "octopus-dev"
+	select LINUX_3_4
+	select DISPLAY_SUPPORT
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_octopus_sch
+	bool "octopus-sch"
+	select LINUX_3_4
+	select DISPLAY_SUPPORT
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select arm
+
+
+config TARGET_tulip_d1
+	bool "tulip-d1"
+	select LINUX_3_10
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select USES_INITRAMFS
+	select RTC_SUPPORT
+	select USB_SUPPORT
+	select aarch64
+	help
+	  Build multi-platform images for the ARMv8 instruction set architecture
+
+
+endchoice
+
+choice
+	prompt "Subtarget" if HAS_SUBTARGETS
+
+endchoice
+
+choice
+	prompt "Target Profile"
+
+config TARGET_astar_evb_ 
+	bool "tina"
+	depends on TARGET_astar_evb
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_astar_parrot_ 
+	bool "tina"
+	depends on TARGET_astar_parrot
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_astar_spk_ 
+	bool "tina"
+	depends on TARGET_astar_spk
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_azalea_evb_ 
+	bool "tina"
+	depends on TARGET_azalea_evb
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_azalea_perf1_ 
+	bool "tina"
+	depends on TARGET_azalea_perf1
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_azalea_perf2_ 
+	bool "tina"
+	depends on TARGET_azalea_perf2
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_azalea_perf3_ 
+	bool "tina"
+	depends on TARGET_azalea_perf3
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_octopus_dev_ 
+	bool "tina"
+	depends on TARGET_octopus_dev
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_octopus_sch_ 
+	bool "tina"
+	depends on TARGET_octopus_sch
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+config TARGET_tulip_d1_ 
+	bool "tina"
+	depends on TARGET_tulip_d1
+	
+
+	select DEFAULT_base-files
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_fstools
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_opkg
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+
+endchoice
+
+config HAS_SUBTARGETS
+	bool
+
+config TARGET_BOARD
+	string
+
+		default "astar-evb" if TARGET_astar_evb
+		default "astar-parrot" if TARGET_astar_parrot
+		default "astar-spk" if TARGET_astar_spk
+		default "azalea-evb" if TARGET_azalea_evb
+		default "azalea-perf1" if TARGET_azalea_perf1
+		default "azalea-perf2" if TARGET_azalea_perf2
+		default "azalea-perf3" if TARGET_azalea_perf3
+		default "octopus-dev" if TARGET_octopus_dev
+		default "octopus-sch" if TARGET_octopus_sch
+		default "tulip-d1" if TARGET_tulip_d1
+
+config DEFAULT_TARGET_OPTIMIZATION
+	string
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_astar_evb
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_astar_parrot
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_astar_spk
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_azalea_evb
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_azalea_perf1
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_azalea_perf2
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_azalea_perf3
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_octopus_dev
+	default "-Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon" if TARGET_octopus_sch
+	default "-Os -pipe -fno-caller-saves" if TARGET_tulip_d1
+	default "-Os -pipe -funit-at-a-time"
+
+config CPU_TYPE
+	string
+	default "cortex-a7+neon" if TARGET_astar_evb
+	default "cortex-a7+neon" if TARGET_astar_parrot
+	default "cortex-a7+neon" if TARGET_astar_spk
+	default "cortex-a7+neon" if TARGET_azalea_evb
+	default "cortex-a7+neon" if TARGET_azalea_perf1
+	default "cortex-a7+neon" if TARGET_azalea_perf2
+	default "cortex-a7+neon" if TARGET_azalea_perf3
+	default "cortex-a7+neon" if TARGET_octopus_dev
+	default "cortex-a7+neon" if TARGET_octopus_sch
+	default "armv8-a" if TARGET_tulip_d1
+	default ""
+
+config LINUX_3_4
+	bool
+
+
+config LINUX_3_10
+	bool
+
+	config DEFAULT_base-files
+		bool
+
+	config DEFAULT_busybox
+		bool
+
+	config DEFAULT_dropbear
+		bool
+
+	config DEFAULT_fstools
+		bool
+
+	config DEFAULT_libc
+		bool
+
+	config DEFAULT_libgcc
+		bool
+
+	config DEFAULT_mtd
+		bool
+
+	config DEFAULT_netifd
+		bool
+
+	config DEFAULT_opkg
+		bool
+
+	config DEFAULT_uci
+		bool
+
+	config DEFAULT_uclient-fetch
+		bool
+

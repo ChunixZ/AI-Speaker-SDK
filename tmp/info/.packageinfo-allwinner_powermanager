@@ -1,0 +1,36 @@
+Source-Makefile: package/allwinner/powermanager/Makefile
+Package: PowerManager
+Menu: 1
+Default: 1
+Version: 1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libstdcpp +liballwinner-base
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: Tina power manager
+Maintainer: 
+Source: 
+Type: ipkg
+Description:   simple PowerManager for tina
+
+@@
+
+Package: PowerManager-demo
+Version: 1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread PowerManager +libpthread
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: PowerManager demo
+Maintainer: 
+Source: 
+Type: ipkg
+Description:   PowerManager demo for tina
+
+@@
+
+

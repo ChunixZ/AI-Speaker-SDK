@@ -1,0 +1,18 @@
+Source-Makefile: package/allwinner/boot-play/Makefile
+Package: boot-play
+Version: 1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +tinymp3
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: boot play
+Maintainer: 
+Source: 
+Type: ipkg
+Description: boot play
+
+@@
+
+

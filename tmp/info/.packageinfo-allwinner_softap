@@ -1,0 +1,36 @@
+Source-Makefile: package/allwinner/softap/Makefile
+Package: softap
+Menu: 1
+Default: 1
+Version: 0.0.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libstdcpp +liballwinner-base +libopenssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: Tina softap manager
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	Tina softap manager
+
+@@
+
+Package: softap-demo
+Version: 0.0.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread softap +softap
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: Tina softap app demo
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	Tina softap app demo
+
+@@
+
+

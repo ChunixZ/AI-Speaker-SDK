@@ -1,0 +1,18 @@
+Source-Makefile: package/dragonst/libawtest/Makefile
+Package: libawtest
+Version: 1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libcutils
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: test
+Category: DragonST
+Title: libawtest for tina linux dragonst interface
+Maintainer: 
+Source: 
+Type: ipkg
+Description:   dragonst interface library
+
+@@
+
+

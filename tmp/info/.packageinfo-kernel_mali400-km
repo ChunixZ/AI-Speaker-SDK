@@ -1,0 +1,20 @@
+Source-Makefile: package/kernel/mali400-km/Makefile
+Package: kmod-mali400-km
+Submenu: Video Support
+Version: <LINUX_VERSION>-2
+Depends: +kmod-sunxi-disp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: mali400 device driver
+Maintainer: 
+Source: 
+Type: ipkg
+Package-Subdir: kernel
+Description:  Kernel module for mali400-km support.
+
+@@
+
+

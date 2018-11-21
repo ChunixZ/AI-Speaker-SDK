@@ -1,0 +1,18 @@
+Source-Makefile: package/allwinner/dlna_demo/Makefile
+Package: dlna_demo
+Version: 1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libstdcpp +liballwinner-base +liballwinner +dlna-service
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: dlna demo
+Maintainer: 
+Source: 
+Type: ipkg
+Description:   dlna demo
+
+@@
+
+

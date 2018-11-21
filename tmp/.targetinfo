@@ -1,0 +1,290 @@
+Source-Makefile: target/allwinner/astar-evb/Makefile
+Target: astar-evb
+Target-Board: astar-evb
+Target-Name: astar-evb
+Target-Path: /home/zyc/Documents/R16/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 3.4.39
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/astar-parrot/Makefile
+Target: astar-parrot
+Target-Board: astar-parrot
+Target-Name: astar-parrot
+Target-Path: /home/zyc/Documents/R16/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 3.4.39
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/astar-spk/Makefile
+Target: astar-spk
+Target-Board: astar-spk
+Target-Name: astar-spk
+Target-Path: /home/zyc/Documents/R16/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 3.4.39
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/azalea-evb/Makefile
+Target: azalea-evb
+Target-Board: azalea-evb
+Target-Name: azalea-evb
+Target-Path: /home/zyc/Documents/R16/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 3.10.65
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/azalea-perf1/Makefile
+Target: azalea-perf1
+Target-Board: azalea-perf1
+Target-Name: azalea-perf1
+Target-Path: /home/zyc/Documents/R16/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 3.10.65
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/azalea-perf2/Makefile
+Target: azalea-perf2
+Target-Board: azalea-perf2
+Target-Name: azalea-perf2
+Target-Path: /home/zyc/Documents/R16/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 3.10.65
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/azalea-perf3/Makefile
+Target: azalea-perf3
+Target-Board: azalea-perf3
+Target-Name: azalea-perf3
+Target-Path: /home/zyc/Documents/R16/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display dt ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 3.10.65
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/octopus-dev/Makefile
+Target: octopus-dev
+Target-Board: octopus-dev
+Target-Name: octopus-dev
+Target-Path: /home/zyc/Documents/R16/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 3.4.39
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/octopus-sch/Makefile
+Target: octopus-sch
+Target-Board: octopus-sch
+Target-Name: octopus-sch
+Target-Path: /home/zyc/Documents/R16/tina
+Target-Arch: arm
+Target-Arch-Packages: sunxi
+Target-Features: display ext4 fpu gpio rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv7-a -mtune=cortex-a7 -mfpu=neon
+CPU-Type: cortex-a7+neon
+Linux-Version: 3.4.39
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch   
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+
+Source-Makefile: target/allwinner/tulip-d1/Makefile
+Target: tulip-d1
+Target-Board: tulip-d1
+Target-Name: tulip-d1
+Target-Path: /home/zyc/Documents/R16/tina
+Target-Arch: aarch64
+Target-Arch-Packages: sunxi
+Target-Features: display dt fpu gpio ramdisk rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -fno-caller-saves
+CPU-Type: armv8-a
+Linux-Version: 3.10.65
+Linux-Release: 1
+Linux-Kernel-Arch: arm64
+Target-Description:
+	Build multi-platform images for the ARMv8 instruction set architecture
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch  
+Target-Profile: 
+Target-Profile-Name: tina
+Target-Profile-Packages:  
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+
+@@
+
+

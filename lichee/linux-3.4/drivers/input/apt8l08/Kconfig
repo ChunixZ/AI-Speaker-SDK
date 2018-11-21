@@ -1,0 +1,9 @@
+#
+#  Apt7l05sf driver configuration
+#
+config  TOUCH_APT8L08
+       tristate  "apt8l08 touchpad driver"      
+       default m 
+       help
+         touch pad apt8l08    
+         

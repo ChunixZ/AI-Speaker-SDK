@@ -1,0 +1,18 @@
+Source-Makefile: package/allwinner/tinarecorderdemo/Makefile
+Package: tinarecorderdemo
+Version: 1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +liballwinner
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: CedarX2.6 recorder utils for allwinner
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	CedarX2.6 recorder
+
+@@
+
+

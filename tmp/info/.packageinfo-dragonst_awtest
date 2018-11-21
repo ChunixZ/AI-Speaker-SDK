@@ -1,0 +1,18 @@
+Source-Makefile: package/dragonst/awtest/Makefile
+Package: awtest
+Version: 1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libawtest +memtester +alsa-lib
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: test
+Category: DragonST
+Title: awtest for tina linux dragonst
+Maintainer: 
+Source: 
+Type: ipkg
+Description:   dragonst test contorl
+
+@@
+
+

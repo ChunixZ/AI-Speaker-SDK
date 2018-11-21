@@ -1,0 +1,37 @@
+#!/bin/sh /etc/rc.common
+# /etc/init.d/test_led
+# Copyright (C) 2006-2011 OpenWrt.org
+
+echo =============wu================wu==================wu==============
+START=95
+
+USE_PROCD=111
+
+PROG=/sbin/a9fapp
+
+start_service() {
+	echo "start main..."
+#	./sbin/a9fapp > /dev/null
+#	wifi_connect_ap_test
+#	cd /home/
+#	tar xvf output.tar
+#	file="/home/output.tar"
+#if [ -f "$file" ]
+#	then mac_for_id
+#fi
+#	rm output.tar
+#	cp /home/output/tinymix /usr/sbin/
+#	cd /home/output/
+#	LD_LIBRARY_PATH=./lib ./duer_linux > /mnt/UDISK/d9.log
+	cd /home/
+if [ -f "/home/output.tar" ]; then
+	tar xvf output.tar
+	mac_for_id
+	rm -f output.tar
+fi
+	cp /home/output/tinymix /usr/sbin/
+	cd /home/output/
+	LD_LIBRARY_PATH=./lib ./duer_linux > /mnt/UDISK/d9.log
+
+
+}

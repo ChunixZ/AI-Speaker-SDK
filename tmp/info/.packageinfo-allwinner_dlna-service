@@ -1,0 +1,18 @@
+Source-Makefile: package/allwinner/dlna-service/Makefile
+Package: dlna-service
+Version: 1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libstdcpp +liballwinner-base +liballwinner
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: libdlna and services for Tina
+Maintainer: 
+Source: 
+Type: ipkg
+Description:   libdlna and services for Tina
+
+@@
+
+

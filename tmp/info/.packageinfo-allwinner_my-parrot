@@ -1,0 +1,18 @@
+Source-Makefile: package/allwinner/my-parrot/Makefile
+Package: my-parrot
+Version: 0.0.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libstdcpp +libev +libcurl +libjson-c +liballwinner-base +liballwinner +wifimanager +smartlinkd +tinymp3 +bluetooth
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: my tina parrot
+Maintainer: 
+Source: 
+Type: ipkg
+Description: my tina parrot
+
+@@
+
+

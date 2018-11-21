@@ -1,0 +1,130 @@
+Source-Makefile: package/firmware/linux-firmware/Makefile
+Package: ap6255-firmware
+Version: 1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: Broadcom AP6255 firmware
+Maintainer: Trace Wong
+Source: 
+Type: ipkg
+Description: Broadcom AP6255 firmware
+Trace Wong
+@@
+
+Package: ap6212-firmware
+Version: 1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: Broadcom AP6212 firmware
+Maintainer: Trace Wong
+Source: 
+Type: ipkg
+Description: Broadcom AP6212 firmware
+Trace Wong
+@@
+
+Package: ap6335-firmware
+Version: 1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: Broadcom AP6335 firmware
+Maintainer: Trace Wong
+Source: 
+Type: ipkg
+Description: Broadcom AP6335 firmware
+Trace Wong
+@@
+
+Package: xr819-firmware
+Version: 1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: Xradio xr819 firmware
+Maintainer: Trace Wong
+Source: 
+Type: ipkg
+Description: Xradio xr819 firmware
+Trace Wong
+@@
+
+Package: r8188eu-firmware
+Version: 1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: RealTek RTL8188EU firmware
+Maintainer: Trace Wong
+Source: 
+Type: ipkg
+Description: RealTek RTL8188EU firmware
+Trace Wong
+@@
+
+Package: r8723bs-firmware
+Version: 1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: RealTek RTL8723BS firmware
+Maintainer: Trace Wong
+Source: 
+Type: ipkg
+Description: RealTek RTL8723BS firmware
+Trace Wong
+@@
+
+Package: ap6356s-firmware
+Version: 1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: Broadcom AP6356S firmware
+Maintainer: Trace Wong
+Source: 
+Type: ipkg
+Description: Broadcom AP6356S firmware
+Trace Wong
+@@
+
+Package: ap6212a-firmware
+Version: 1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: Broadcom AP6212A firmware
+Maintainer: Trace Wong
+Source: 
+Type: ipkg
+Description: Broadcom AP6212A firmware
+Trace Wong
+@@
+
+

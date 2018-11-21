@@ -1,0 +1,35 @@
+Source-Makefile: package/allwinner/smartlinkd/Makefile
+Package: smartlinkd
+Menu: 1
+Version: 0.0.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libstdcpp +liballwinner-base +alsa-lib
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: smartlinkd for Tina
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	wifi configuration for none input platform
+
+@@
+
+Package: smartlinkd-demo
+Version: 0.0.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread smartlinkd
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: smartlinkd demo
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	client demo
+
+@@
+
+

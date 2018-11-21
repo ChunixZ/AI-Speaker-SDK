@@ -1,0 +1,9 @@
+#
+#  Apt7l05sf driver configuration
+#
+config  TOUCH_APT7L05SF
+       tristate  "apt7l05sf touchpad driver"      
+       default m 
+       help
+         touch pad apt7l05sf    
+         

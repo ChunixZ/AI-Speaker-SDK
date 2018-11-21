@@ -1,0 +1,36 @@
+Source-Makefile: package/allwinner/wifimanager/Makefile
+Package: wifimanager
+Menu: 1
+Default: 1
+Version: 0.0.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libstdcpp +liballwinner-base
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: Tina wifi manager
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	Tina wifi manager
+
+@@
+
+Package: wifimanager-demo
+Version: 0.0.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread wifimanager +wifimanager
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: Tina wifi app demo
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	Tina wifi app demo
+
+@@
+
+

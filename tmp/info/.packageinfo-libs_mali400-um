@@ -1,0 +1,18 @@
+Source-Makefile: package/libs/mali400-um/Makefile
+Package: mali400-um
+Version: 1.1.2-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +librt +kmod-mali400-km
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: mali400 userspace libs
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	mali400 userspace libraries
+
+@@
+
+

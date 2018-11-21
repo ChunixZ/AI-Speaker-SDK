@@ -1,0 +1,18 @@
+Source-Makefile: package/allwinner/sayeye/Makefile
+Package: sayeye
+Version: 1.0.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libutils +libcutils +libsysutils
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: sayeye from Android L
+Maintainer: 
+Source: 
+Type: ipkg
+Description:   sayeye form Android L
+
+@@
+
+

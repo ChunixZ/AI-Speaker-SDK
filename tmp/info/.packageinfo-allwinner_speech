@@ -1,0 +1,18 @@
+Source-Makefile: package/allwinner/speech/Makefile
+Package: speech
+Version: 0.0.8-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libstdcpp ++alsa-lib
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: speech
+Maintainer: 
+Source: 
+Type: ipkg
+Description: speech
+
+@@
+
+

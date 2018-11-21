@@ -1,0 +1,36 @@
+Source-Makefile: package/allwinner/bluetooth/Makefile
+Package: bluetooth
+Menu: 1
+Default: 1
+Version: 0.0.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +librt +alsa-lib +libspeex +libuci
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: Bluetooth APP(bsa 01062)
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	Bluetooth API
+
+@@
+
+Package: bluetooth-demo
+Version: 0.0.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread bluetooth +bluetooth
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Allwinner
+Title: BT app demo
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	Bluetooth app demo
+
+@@
+
+

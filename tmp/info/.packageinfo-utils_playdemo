@@ -1,0 +1,20 @@
+Source-Makefile: package/utils/playdemo/Makefile
+Package: playdemo
+Version: 0.1.1-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +smartlinkd +wifimanager +liballwinner +PowerManager +bluetooth
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: music play in 3 kinds of mode
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	play music in 1 of 3 mode including bt play, wifi play and linein play.
+	otherwise, before wifi play,we should get password by smartlink.
+	we can choice mode by entrying in adb and exit each of mode by pressing key power
+
+@@
+
+
