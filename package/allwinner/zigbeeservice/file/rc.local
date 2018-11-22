@@ -1,0 +1,12 @@
+# Put your custom commands here that should be executed once
+# the system init finished. By default this file does nothing.
+
+
+# stty -F /dev/ttyS2 38400
+chmod 777 /home/zigbeeserviceStart.sh
+chmod 777 /home/zigbeeService
+/home/zigbeeserviceStart.sh &
+/home/zigbeeService &
+
+
+exit 0

@@ -1,0 +1,26 @@
+
+
+killall -q udhcpc hostapd udhcpd wpa_supplicant
+
+ifconfig wlan0 down
+
+rm -rf /etc/wifi/sockets
+
+rmmod bcmdhd
+
+insmod /lib/modules/3.4.39/bcmdhd.ko "firmware_path=/lib/firmware/fw_bcm43438a0_apsta.bin" "nvram_path=/lib/firmware/nvram.txt"
+
+ifconfig wlan0 192.168.5.1 netmask 255.255.255.0 up
+
+sleep 1
+
+udhcpd -fS /etc/udhcpd.conf &
+
+hostapd -B /etc/hostapd.conf
+
+
+
+
+
+
+

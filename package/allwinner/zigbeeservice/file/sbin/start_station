@@ -1,0 +1,18 @@
+
+
+killall  udhcpd hostapd wpa_supplicant  -q
+
+ifconfig wlan0 down
+
+                                                                           
+
+
+rmmod bcmdhd
+
+insmod /lib/modules/3.4.39/bcmdhd.ko 
+
+ifconfig wlan0 up
+
+wpa_supplicant -iwlan0 -Dnl80211 -c /etc/wifi/wpa_supplicant.conf  -B && udhcpc -iwlan0 
+
+
