@@ -23,7 +23,7 @@ define Package/$(PKG_NAME)
   TITLE:=IMIO Circle Gateway zigbeeservice
   DEPENDS:= +libblobmsg-json +libcares +libcurl +libjson-c +liblua +libmosquitto \
                       +libnghttp2 +libsqlite3 +libubox +hostapd +ca-certificates \
-                      +libubus +libuci +libmbedtls +libustream-cyassl #+libssl #+libcrypto 
+                      +libubus +libuci +libmbedtls +libustream-cyassl +libpolarssl #+libssl #+libcrypto 
 endef
 
 define Package/$(PKG_NAME)/description

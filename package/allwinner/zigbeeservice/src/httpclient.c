@@ -6,6 +6,7 @@
 #include <fcntl.h>
 #include <curl/curl.h>
 #include <sys/stat.h>
+#include <stdbool.h>
 #include <dirent.h>
 #include "cJSON.h"
 #include "wireless.h"
